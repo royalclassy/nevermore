@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+.navList{
+    display: flex;
+    gap: 2em;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.5)), url(./student.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 8rem;
+    gap: 1.5rem;
+    mix-blend-mode: screen;
+}
+
+.logo{
+    width: 40px;
+}
+
+.logoContainer{
+    display: flex;
+    gap: 5px;
+    font-size: 11px;
+    align-items: center;
+}
+
+.contact{
+    background-color: #074694;
+    padding: 0.5rem;
+    color: #fdfdfd;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.contact:hover{
+    background-color: #075e94;
+    color: #fdfdfd;
+    transition: 0.2s ease-in;
+}
+
+.heroButton{
+    background-color: #e9a317;
+    padding: 0.5rem;
+    color: #074694;
+    border-radius: 7px;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 10px 14px; 
+}
+
+.heroCaption{
+    color: #fdfdfd;
+    font-size: 3rem;
+}
+ 
+.divider{
+    height: 75px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(13,13,13,1) 100%);
+    filter: drop-shadow(0 -5mm 4mm rgba(2,0,36,1));
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.dividerLogo{
+    width: 35px;
+}
+
+.sideBar, .mainContent{
+    height: 50vh;
+    width: 100%;
+}
+
+.sideBar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.1)), url(./side.jfif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    gap: 0.5rem;
+}
+
+.mainContent{
+    background-color: rgba(13,13,13,1);
+
+}
+
+.contentContainer{
+    display: flex;
+}
+
+.titleMenu{
+    font-weight: 700;
+    color: #fdfdfd;
+}
+
+.smList{
+    display: inline-block;
+    font-weight: 500;
+    color: #fdfdfd;
+    transition: all 0.3s ease-in-out;
+}  
+
+.smList:hover{
+    transform: translateX(10px);
+}
+
+footer>h2{
+   height: 7rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   font-weight: 600;
+   background-color: #074694;
+   color: #fdfdfd;
+}
+
+/* @media screen and (min-width:1000px) {
+    .hero{
+        background-position: center top;
+    }
+} */
